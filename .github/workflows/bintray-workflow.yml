@@ -7,4 +7,4 @@ jobs:
       uses: wei/curl@master
       with:
         args: |-
-          -vvf -uchiju:32ea322465698d89b0b2844be7d8007527516e6e -H 'Content-Type: application/json' -X POST http://api.bintray.com/packages/chiju/debs/openssh/versions
+          -vvf -uchiju:32ea322465698d89b0b2844be7d8007527516e6e -H 'Content-Type: application/json' -X POST --data '{ "name": "7.1", "github_use_tag_release_notes": false }' http://api.bintray.com/packages/chiju/debs/openssh/versions
