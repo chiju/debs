@@ -3,8 +3,8 @@
 set -e
 
 version=46
-username='chiju'
-password='32ea322465698d89b0b2844be7d8007527516e6e'
+username=chiju
+password=32ea322465698d89b0b2844be7d8007527516e6e
 
 curl -svvf -u username:password -H "Content-Type: application/json" -X POST https://api.bintray.com/packages/chiju/debs/openssh/versions --data "{\"name\": \"$version\", \"github_use_tag_release_notes\": false }"
 git clone https://github.com/chiju/debs.git
