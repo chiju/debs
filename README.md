@@ -20,9 +20,9 @@ Settings >> Secrets >> Add a new secret
 
 ## For adding repo in server
 
-1) For adding repo in the server
+1) For adding repo in the server and bintray key
 ```shell
-echo "deb https://dl.bintray.com/chiju/debs /" | sudo tee -a /etc/apt/sources.list
+echo "deb https://dl.bintray.com/chiju/debs /" | sudo tee -a /etc/apt/sources.list; wget https://bintray.com/user/downloadSubjectPublicKey?username=bintray -O bintray-key; apt-key add bintray-key
 ```
 
 2) For listing packages
