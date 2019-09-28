@@ -17,6 +17,6 @@ do
 	curl -svvf -X PUT -T $f -u $username:$password \
 										-H "X-Bintray-Debian-Distribution:xenial" \
 										-H "X-Bintray-Debian-Component:main" \
-										-H "X-Bintray-Debian-Architecture:amd64 \
+										-H "X-Bintray-Debian-Architecture:amd64" \
 										https://api.bintray.com/content/chiju/debs/openssh/$version/$f; 
 done
