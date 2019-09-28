@@ -2,7 +2,7 @@
 
 set -e
 
-version=48
+version=7.6
 username='chiju'
 password='32ea322465698d89b0b2844be7d8007527516e6e'
 
