@@ -13,7 +13,7 @@ curl -svvf -u $username:$password \
            -H "Content-Type: application/json" \
            -X POST https://api.bintray.com/packages/$username/$repository/$package/versions \
            --data "{\"name\": \"$version\", \"github_use_tag_release_notes\": false }"
-git clone git_repo
+git clone $git_repo
 cd debs
 
 #upoloading pacakges
