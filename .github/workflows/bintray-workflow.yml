@@ -3,7 +3,7 @@ jobs:
   curl:
     runs-on: ubuntu-latest
     steps:
-    - name: repo
+    - name: bintray repo
       uses: chiju/debs@master
       env:
        bintray_key: ${{ secrets.bintray_key }}

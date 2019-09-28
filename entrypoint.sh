@@ -2,7 +2,7 @@
 
 version=7.8
 username='chiju'
-password=$bintray_ke
+password=$bintray_key
 repository='debs'
 package='openssh'
 git_repo='https://github.com/chiju/debs.git'
