@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version=7.8
+version=7.6
 username='chiju'
 password=$bintray_key
 repository='debs'
