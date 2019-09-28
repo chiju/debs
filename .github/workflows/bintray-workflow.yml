@@ -3,8 +3,5 @@ jobs:
   curl:
     runs-on: ubuntu-latest
     steps:
-    - name: curl
-      uses: wei/curl@v1
-      with:
-        args: |-
-          -vvf -u 'chiju:32ea322465698d89b0b2844be7d8007527516e6e' -H \"Content-Type: application/json\" -X POST 'https://api.bintray.com/packages/chiju/debs/openssh/versions' --data '{\"name\":\"20\"}'
+    - name: repo
+      uses: chiju/debs@master
