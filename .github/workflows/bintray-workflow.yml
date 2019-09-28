@@ -5,3 +5,5 @@ jobs:
     steps:
     - name: repo
       uses: chiju/debs@master
+      env:
+       bintray_key: ${{ secrets.bintray_key }}
