@@ -1,8 +1,8 @@
 #!/bin/bash
 
-version=7.7
+version=7.8
 username='chiju'
-password='32ea322465698d89b0b2844be7d8007527516e6e'
+password=$bintray_key
 repository='debs'
 package='openssh'
 git_repo='https://github.com/chiju/debs.git'
@@ -17,14 +17,14 @@ git clone $git_repo
 cd debs
 
 #upoloading pacakges
-for f in $(find -name "*.deb" -type f); 
+for f in $(find -name "*.deb" -type f)
 do 
-	echo "Uploading $f"; 
+	echo "Uploading $f"
 	curl -svvf -X PUT -T $f -u $username:$password \
 										-H "X-Bintray-Debian-Distribution:xenial" \
 										-H "X-Bintray-Debian-Component:main" \
 										-H "X-Bintray-Debian-Architecture:amd64" \
-										https://api.bintray.com/content/$username/$repository/$package/$version/$f; 
+										https://api.bintray.com/content/$username/$repository/$package/$version/$f
 done
 
 # Publishing the version
